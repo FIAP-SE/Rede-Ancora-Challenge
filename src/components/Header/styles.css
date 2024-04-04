@@ -1,0 +1,17 @@
+Header{
+    height: 150px;
+}
+
+.rda-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px 20px 70px;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.subMenu img {
+    width: 110px;
+}

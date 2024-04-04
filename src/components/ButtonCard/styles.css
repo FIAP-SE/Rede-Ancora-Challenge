@@ -1,0 +1,14 @@
+.rda-button {
+    background-color: var(--color-bg-secondary);
+    border-bottom: 10px solid var(--color-border-bottom);
+    width: 600px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+    color: var(--color-font-primary);
+    cursor: pointer;
+}
