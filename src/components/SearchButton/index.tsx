@@ -1,10 +1,14 @@
 import './styles.css';
 
-export default function SearchButton() {
+type Props = {
+    children: string;
+}
+
+export default function SearchButton({children}: Props) {
 
     return (
-        <div>
-            <button>BUSCAR</button>
+        <div className='center'>
+            <button className='buttonstyle'> {children} </button>
         </div>
     );
 }

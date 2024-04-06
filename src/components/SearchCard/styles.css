@@ -1,4 +1,27 @@
 .rda-searchcard {
-    width: 200px;
+    width: 700px;
     background-color: #FFF;
+    border-radius: 16px;
+
+    padding: 80px 60px;
+
 }
+
+.rda-searchcard-header{
+    margin-bottom: 30px;
+}
+
+
+.rda-searchcard-header > h3{
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.rda-searchcard-content{
+    margin-bottom: 30px;
+}
+
+.rda-searchcard-content > p {
+    padding-left: 10px;
+}
+

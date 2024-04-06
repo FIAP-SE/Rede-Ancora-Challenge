@@ -5,20 +5,22 @@ import './styles.css';
 type Props = {
     title: string;
     description: string;
+    label: string;
+    children: string;
 }
 
-export default function SearchCard({title, description}: Props) {
+export default function SearchCard({title, description, label, children}: Props) {
 
     return (
             <div className='rda-searchcard'>
-                <div>
+                <div className='rda-searchcard-header'>
                     <h3>{title}</h3>
                 </div>
-                <div>
+                <div className='rda-searchcard-content'>
                     <p>{description}</p>
                 </div>
-                <InputSearch label='aaaaaa'/>
-                <SearchButton/>
+                <InputSearch label={label} />
+                <SearchButton children={children}/>
             </div>
     );
 }

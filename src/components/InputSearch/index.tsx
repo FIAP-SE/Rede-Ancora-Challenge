@@ -7,8 +7,8 @@ type Props = {
 export default function InputSearch({label }: Props) {
 
     return (
-        <div>
-            <input type="text" placeholder={label} />
+        <div className='center'>
+            <input className='search' type="text" placeholder={label}/>
         </div>
     );
 }
