@@ -1,5 +1,5 @@
 import Header from "../../../components/Header";
-import SearchCard from "../../../components/SearchCard";
+import SearchFilter from "../../../components/SearchFilter";
 import './styles.css';
 
 export default function SearchByFilter() {
@@ -11,7 +11,7 @@ export default function SearchByFilter() {
             </header>
             <main className="center">
                 <section>
-                    <SearchCard title="BUSCA POR FILTROS" description="Selecione os filtros abaixo para encontrar a peça certa"/>
+                    <SearchFilter title="BUSCA POR FILTROS" description="Selecione os filtros abaixo para encontrar a peça certa"   label=""  children="BUSCAR"/>
                 </section>
             </main>
         </>
