@@ -41,7 +41,7 @@ const [products, setProducts] = useState([
     };
 
     const finalizeOrder = () => {
-        navigate('/order-confirmed');
+        navigate('/OrderConfirmed');
     };
 
     return (

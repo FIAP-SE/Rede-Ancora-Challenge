@@ -4,6 +4,7 @@ import SearchByPlate from "./routes/Home/SearchByPlate";
 import SearchByFilter from "./routes/Home/SearchByFilter";
 import SearchByCode from "./routes/Home/SearchByCode";
 import MyCart from "./routes/cart/MyCart"
+import OrderConfirmed from "./routes/cart/MyCart/OrderConfirmed";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/searchbyfilter" element={<SearchByFilter />} />
         <Route path="/searchbycode" element={<SearchByCode />} />
         <Route path="/mycart" element={<MyCart/>} />
+        <Route path="/orderconfirmed" element={<OrderConfirmed />} />
       </Routes>
     </BrowserRouter>
   );
