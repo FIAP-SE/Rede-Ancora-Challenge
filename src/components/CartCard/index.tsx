@@ -4,8 +4,8 @@ import './styles.css';
 
 export default function ShoppingCart() {
 
-/*SIMULAÇÃO DE PRODUTOS*/
-const [products, setProducts] = useState([
+    /*SIMULAÇÃO DE PRODUTOS*/
+    const [products, setProducts] = useState([
         { id: 1, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
         { id: 2, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
         { id: 3, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
@@ -40,7 +40,38 @@ const [products, setProducts] = useState([
         setProducts(newProducts);
     };
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+
+    const isValidName = (name: string) => {
+        return /^[A-Za-z]+ [A-Za-z]+/.test(name);
+    };
+
+    const isValidEmail = (email: string) => {
+        return /\S+@\S+\.\S+/.test(email);
+    };
+
+    const isValidPhone = (phone: string) => {
+        return /^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$/.test(phone);
+    };
+
     const finalizeOrder = () => {
+        if (!isValidName(name)) {
+            alert('Por favor, insira um nome válido.');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            alert('Por favor, insira um e-mail válido.');
+            return;
+        }
+
+        if (!isValidPhone(phone)) {
+            alert('Por favor, insira um número de telefone válido.');
+            return;
+        }
+
         navigate('/OrderConfirmed');
     };
 
@@ -78,9 +109,28 @@ const [products, setProducts] = useState([
             <div className="customer-details-container">
                 <div className="customer-info">
                     <h2 className="customer-data">DADOS DO CLIENTE</h2>
-                    <input className="input-style" type="text" placeholder="Nome" />
-                    <input className="input-style" type="email" placeholder="Email" />
-                    <input className="input-style" type="tel" placeholder="Telefone" />
+                    <input
+                        className="input-style"
+                        type="text"
+                        placeholder="Nome"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <input
+                        className="input-style"
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input
+                        className="input-style"
+                        type="tel"
+                        placeholder="Telefone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                    />
+
                 </div>
                 <button className="checkout-button" onClick={finalizeOrder}>FINALIZAR</button>
             </div>
