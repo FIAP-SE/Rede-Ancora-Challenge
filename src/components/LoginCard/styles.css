@@ -1,0 +1,92 @@
+.rda-LoginCard {
+    width: 500px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.rda-LoginCard-header{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rda-LoginCard-content{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forgot-pass{
+    align-self: flex-start;
+    text-decoration: underline;
+    font-size: small ;
+    margin-left: 8vh;
+    color: rgb(70, 70, 70);
+    font-weight: 200;
+}
+
+.login-button-login-page{
+    width: 100%;
+    height: 8vh;
+    border-radius: 20px 0px 0px 0px;
+    font-size: x-large;
+    background: white;
+    border: none;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+
+}
+
+.signup-button-login-page{
+    width: 100%;
+    height: 8vh;
+    border-radius: 0px 20px 0px 0px;
+    font-size: x-large;
+    border-left: gray 2px solid;
+    border-bottom: gray 2px solid;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+h2{
+    font-size: 1.2em;
+    color: rgb(70, 70, 70);
+    font-weight:normal;
+}
+
+.input-box{
+    width: 70%;
+	height: 6vh;
+	background: white;
+	justify-content: center;
+	display: flex;
+    margin: 0.3vh auto;
+	padding: 20px;
+    border-color: black;
+    border:2px solid;
+	border-radius: 18px;
+    font-size:1em;
+}
+
+.input-box::placeholder{
+    font-size: 1.5em;
+
+}
+
+.enter-button-login-page{
+    width: 70%;
+    height: 6vh;
+    border-radius: 20px;
+    font-size: x-large;
+    background: rgb(0, 255, 98);
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    border: none;
+    margin-bottom: 10%;
+    margin-top: 3%;
+
+}
