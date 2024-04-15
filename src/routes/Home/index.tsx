@@ -30,7 +30,7 @@ export default function Home() {
               <ButtonCard content="BUSCA POR PLACA" onClick={() => handleNavigate("searchbyplate")} />
               <ButtonCard content="BUSCA POR FILTRO" onClick={() => handleNavigate("searchbyfilter")} />
               <ButtonCard content="CÓDIGO DA PEÇA" onClick={() => handleNavigate("searchbycode")} />
-              <ButtonCard content="MEU CADASTRO" onClick={() => handleNavigate("/")} />
+              <ButtonCard content="MEU CADASTRO" onClick={() => handleNavigate("login")} />
             </div>
           </section>
         </main>
