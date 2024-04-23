@@ -9,18 +9,15 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 1202px;
+  width: 1500px;
   height: auto;
 }
 
 .cart-items-container {
   flex: 2;
   margin-right: 2%;
-  overflow-y: auto;
-  flex: 1 0 60%;
+  flex: 1 0 65%;
   max-height: 650px;
-  overflow-y: auto;
-  padding-right: 250px;
 }
 
 ::-webkit-scrollbar {
@@ -34,8 +31,6 @@
 }
 
 .cart-item {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
   background-color: #ffffff;
   padding: 10px;
@@ -46,6 +41,8 @@
 
 .my-cart {
   color: #575757;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .customer-info {
@@ -60,11 +57,10 @@
 .vertical-line {
   border-left: 2px solid #575757;
   position: absolute;
-  left: 65%;
+  left: 70%;
   height: 100%;
   bottom: 0;
 }
-
 
 .customer-info h2,
 .cart-items-container h2 {
@@ -91,7 +87,8 @@
 .customer-data {
   color: #575757;
   font-weight: 700;
-  margin-left: 40px;
+  text-align: center;
+  font-size: 30px;
 }
 
 input {
@@ -116,7 +113,7 @@ input:focus {
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 30px;
   border-radius: 8px;
 }
 
@@ -217,7 +214,7 @@ input[type="number"].product-quantity {
   padding-right: 100px;
   width: 61px;
   overflow: hidden;
-  margin-left: 10px;
+  margin-left: 50px;
   position: relative;
 }
 
