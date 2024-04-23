@@ -15,10 +15,10 @@ export default function Header() {
           <Link to="/" className="nav-link">
             VOLTAR A HOME
           </Link>
-          <Link to="/register" className="nav-link">
+          <Link to="/registration" className="nav-link">
             MEU CADASTRO
           </Link>
-          <Link to="/cart" className="nav-link">
+          <Link to="/mycart" className="nav-link">
             MEU CARRINHO
           </Link>
         </nav>
