@@ -3,10 +3,11 @@ import Home from "./routes/Home";
 import SearchByPlate from "./routes/Home/SearchByPlate";
 import SearchByFilter from "./routes/Home/SearchByFilter";
 import SearchByCode from "./routes/Home/SearchByCode";
-import MyCart from "./routes/Cart/MyCart"
-import OrderConfirmed from "./routes/Cart/MyCart/OrderConfirmed";
+import MyCart from "./routes/cart/MyCart";
+import OrderConfirmed from "./routes/cart/MyCart/OrderConfirmed";
 import Login from "./routes/Home/Login";
 import Registration from "./routes/Home/Registration";
+import ClientPage from "./routes/Home/ClientPage";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/orderconfirmed" element={<OrderConfirmed />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/clientpage" element={<ClientPage />} />
       </Routes>
     </BrowserRouter>
   );
