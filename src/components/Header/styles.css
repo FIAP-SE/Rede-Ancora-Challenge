@@ -23,3 +23,10 @@
     font-weight: 700;
     margin-left: 32px;
 }
+
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    text-underline-offset: 0.2em;
+}
