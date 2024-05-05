@@ -1,9 +1,8 @@
-import React from 'react'
 import Header from "../../../components/Header";
 import SignupCard from "../../../components/SignupCard";
 
 
-function Registration() {
+export default function Registration() {
   return (
     <>
             <header>
@@ -17,5 +16,3 @@ function Registration() {
         </>
   )
 }
-
-export default Registration

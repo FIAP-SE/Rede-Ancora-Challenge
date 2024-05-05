@@ -7,6 +7,7 @@ import MyCart from "./routes/cart/MyCart"
 import OrderConfirmed from "./routes/cart/MyCart/OrderConfirmed";
 import Login from "./routes/Home/Login";
 import Registration from "./routes/Home/Registration";
+import SearchCatalog from "./routes/Home/SearchCatalog";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/orderconfirmed" element={<OrderConfirmed />} />
         <Route path="/login" element={<Login />} /> 
         <Route path="/registration" element={<Registration />} />
+        <Route path="/searchcatalog" element={<SearchCatalog />} />
       </Routes>
     </BrowserRouter>
   );

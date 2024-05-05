@@ -1,6 +1,5 @@
 import './styles.css';
-import logoImg from "../../assets/logo.png";
-import subMenuImg from "../../assets/submenu.svg";
+import logoImg from "../../../public/assets/logo.png";
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -12,9 +11,6 @@ export default function Header() {
                     <Link to={"/"}>
                         <img src={logoImg} alt="logo" />
                     </Link>
-                </div>
-                <div className='subMenu'>
-                    <img src={subMenuImg} alt="subMenu" />
                 </div>
             </div>
         </header>

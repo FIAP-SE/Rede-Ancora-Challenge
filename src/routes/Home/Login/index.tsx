@@ -1,9 +1,8 @@
-import React from 'react'
 import Header from "../../../components/Header";
 import LoginCard from "../../../components/LoginCard";
 
 
-function Login() {
+export default function Login() {
   return (
     <>
             <header>
@@ -17,5 +16,3 @@ function Login() {
         </>
   )
 }
-
-export default Login

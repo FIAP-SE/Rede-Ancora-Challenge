@@ -1,0 +1,137 @@
+{
+  "produtos": [
+    {
+      "id": 9,
+      "imagem": "/assets/freio_fiat.jpg",
+      "categoria": "Freio",
+      "nome": "Freio para carro",
+      "preco": 58.0,
+      "descricao": "Freio para veículos",
+      "marca": "Fiat",
+      "ano": "2012",
+      "outras_informacoes": "Outras informações sobre Freios para Carro",
+      "quantidade": 28,
+      "codigo da peça": "MOPIII9B9"
+    },
+    {
+      "id": 10,
+      "imagem": "/assets/freio_mitsubishi.jpg",
+      "categoria": "Freio",
+      "nome": "Freio para carro",
+      "preco": 70.0,
+      "descricao": "Freio para veículos",
+      "marca": "Mitsubishi",
+      "ano": "2022",
+      "outras_informacoes": "Outras informações sobre Freios para Carro",
+      "quantidade": 36,
+      "codigo da peça": "K5M6GN6G2"
+    },
+    {
+      "id": 11,
+      "imagem": "/assets/freio_ford.jpg",
+      "categoria": "Freio",
+      "nome": "Freio para carro",
+      "preco": 80.0,
+      "descricao": "Freio para veículos",
+      "marca": "Ford",
+      "ano": "2004",
+      "outras_informacoes": "Outras informações sobre Freios para Carro",
+      "quantidade": 48,
+      "codigo da peça": "FWCH0RG0S"
+      
+    },
+    {
+      "id": 12,
+      "imagem": "/assets/freio_chevrolet.jpg",
+      "categoria": "Freio",
+      "nome": "Freio para carro",
+      "preco": 62.0,
+      "descricao": "Freio para veículos",
+      "marca": "Chevrolet",
+      "ano": "2016",
+      "outras_informacoes": "Outras informações sobre Freios para Carro",
+      "quantidade": 20,
+      "codigo da peça": "U6ISY5WGR"
+    },
+    {
+      "id": 13,
+      "imagem": "/assets/motor_fiat.jpg",
+      "categoria": "Motor",
+      "nome": "Motor para carro",
+      "preco": 9500.0,
+      "descricao": "Motor para veículos",
+      "marca": "Fiat",
+      "ano": "2012",
+      "outras_informacoes": "Outras informações sobre Motores para Carro",
+      "quantidade": 9,
+      "codigo da peça": "1JYYF5SG0"
+    },
+    {
+      "id": 14,
+      "imagem": "/assets/motor_mitsubishi.jpg",
+      "categoria": "Motor",
+      "nome": "Motor para carro",
+      "preco": 25000.0,
+      "descricao": "Motor para veículos",
+      "marca": "Mitsubishi",
+      "ano": "2022",
+      "outras_informacoes": "Outras informações sobre Motores para Carro",
+      "quantidade": 8,
+      "codigo da peça": "KQTZELKB5"
+    },
+    {
+      "id": 15,
+      "imagem": "/assets/motor_ford.jpg",
+      "categoria": "Motor",
+      "nome": "Motor para carro",
+      "preco": 3000.0,
+      "descricao": "Motor para veículos",
+      "marca": "Ford",
+      "ano": "2004",
+      "outras_informacoes": "Outras informações sobre Motores para Carro",
+      "quantidade": 15,
+      "codigo da peça": "CMTI4TS61"
+      
+    },
+    {
+      "id": 16,
+      "imagem": "/assets/motor_chevrolet.jpg",
+      "categoria": "Motor",
+      "nome": "Motor para carro",
+      "preco": 20000.0,
+      "descricao": "Motor para veículos",
+      "marca": "Chevrolet",
+      "ano": "2016",
+      "outras_informacoes": "Outras informações sobre Motores para Carro",
+      "quantidade": 7,
+      "codigo da peça": "BE4CASU5M"
+    },
+    {
+      "id": 10,
+      "imagem": "/assets/pneuCarro.jpg",
+      "categoria": "Pneu",
+      "nome": "Pneu de Carro",
+      "preco": 80.00,
+      "descricao": "Pneu para veículos",
+      "marca": "Fiat",
+      "ano": "2018",
+      "outras_informacoes": "Outras informações sobre o Pneu de Carro 10",
+      "quantidade": 30,
+      "codigo_da_peca": "584A56IU9"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao@example.com",
+      "telefone": "129967-4095"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "email": "maria@example.com",
+      "telefone": "159987-5432"
+    }
+  ]
+}
