@@ -3,11 +3,9 @@
 :root {
   --color-bg-primary: #003A5D;
   --color-bg-secondary: #fff;
-  
   --color-font-primary: #575757;
   --color-font-secondary: #fff;
-
-  --color-border-bottom: #3DAE2B; 
+  --color-border-bottom: #3DAE2B;
 }
 
 * {
@@ -17,8 +15,7 @@
   font-family: "Inter";
 }
 
-a,
-a:hover {
+a, a:hover {
   text-decoration: none;
   color: unset;
 }
@@ -40,11 +37,11 @@ body {
 }
 
 .title-container {
- align-items: start;
- display: flex;
- justify-content: center;
- flex-direction: column;
- margin-bottom: 30px;
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .rda-title {

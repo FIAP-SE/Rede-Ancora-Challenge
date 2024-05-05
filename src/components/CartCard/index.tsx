@@ -7,11 +7,11 @@ export default function ShoppingCart() {
     /*SIMULAÇÃO DE PRODUTOS*/
     const [products, setProducts] = useState([
         { id: 1, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 2, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
-        { id: 3, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
-        { id: 5, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
-        { id: 6, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
-        { id: 7, name: "Nome do Produto em duas", price: "R$ 109,90", quantity: 1 },
+        { id: 2, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
+        { id: 3, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
+        { id: 5, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
+        { id: 6, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
+        { id: 7, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
     ]);
     const navigate = useNavigate();
 
@@ -91,11 +91,11 @@ export default function ShoppingCart() {
                                 <input className="product-quantity" type="number" value={product.quantity} readOnly />
                                 <div className="item-quantity">
                                     <ul className="increment-buttons">
+                                    <li className="increment-element">
+                                            <button className="quantity-modifier-increment" onClick={() => increment(product.id)}>+</button>
+                                        </li>
                                         <li className="decrement-element">
                                             <button className="quantity-modifier-decrement" onClick={() => decrement(product.id)}>-</button>
-                                        </li>
-                                        <li className="increment-element">
-                                            <button className="quantity-modifier-increment" onClick={() => increment(product.id)}>+</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -130,7 +130,6 @@ export default function ShoppingCart() {
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                     />
-
                 </div>
                 <button className="checkout-button" onClick={finalizeOrder}>FINALIZAR</button>
             </div>

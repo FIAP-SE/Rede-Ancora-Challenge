@@ -1,17 +1,32 @@
-Header{
-    height: 150px;
-}
-
 .rda-header {
     display: flex;
     justify-content: space-between;
-    padding: 30px 70px 20px 70px;
+    align-items: center;
+    padding: 20px 70px;
 }
 
 .logo img {
-    width: 140px;
+    width: auto;
+    height: 160px;
 }
 
-.subMenu img {
-    width: 110px;
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 32px;
+}
+
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    text-underline-offset: 0.2em;
 }

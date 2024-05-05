@@ -6,21 +6,18 @@
   position: relative;
   padding: 20px;
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 64px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 1202px;
+  width: 1500px;
   height: auto;
 }
 
 .cart-items-container {
   flex: 2;
   margin-right: 2%;
-  overflow-y: auto;
-  flex: 1 0 60%;
+  flex: 1 0 65%;
   max-height: 650px;
-  overflow-y: auto;
-  padding-right: 250px;
 }
 
 ::-webkit-scrollbar {
@@ -28,14 +25,16 @@
 }
 
 .customer-details-container {
-  margin-left: 0%;
-  top: 20px;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  left: 35px;
+  top: 100px;
 }
 
 .cart-item {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
   background-color: #ffffff;
   padding: 10px;
@@ -46,25 +45,27 @@
 
 .my-cart {
   color: #575757;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.products-container {
+  max-height: 650px;
+  overflow-y: auto;
+  gap: 10px;
 }
 
 .customer-info {
-  padding: 10px;
-  border-radius: 4px;
-  align-items: center;
-  margin-top: 150px;
-  margin-left: 100px;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .vertical-line {
   border-left: 2px solid #575757;
   position: absolute;
-  left: 65%;
+  left: 70%;
   height: 100%;
   bottom: 0;
 }
-
 
 .customer-info h2,
 .cart-items-container h2 {
@@ -74,11 +75,15 @@
 .input-style {
   border-bottom: 3px;
   font-weight: 500;
+  width: 358px;
+  align-items: center;
+  left: 40px;
+  position: relative;
 }
 
 .checkout-button {
   width: 377px;
-  margin-top: 10px;
+  height: 77px;
   padding: 10px;
   background-color: #3dae2b;
   color: #ffffff;
@@ -86,23 +91,33 @@
   border-radius: 21px;
   cursor: pointer;
   margin-left: 70px;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  right: 35px;
+  top: 20px;
 }
 
 .customer-data {
   color: #575757;
   font-weight: 700;
-  margin-left: 40px;
+  text-align: center;
+  font-size: 30px;
 }
 
 input {
-  width: 300px;
-  background: linear-gradient(#575757, #575757) center bottom 5px /
+  background: linear-gradient(#575757, #575757) center bottom 10px /
     calc(100% - 10px) 2px no-repeat;
   background-color: #ffffff;
-  border: 3px solid;
   padding: 30px;
   border: none;
   margin-bottom: 10px;
+}
+
+input[type=text] {
+  font-size: 28px;
+  color: #575757;
 }
 
 ::placeholder {
@@ -116,7 +131,7 @@ input:focus {
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 30px;
   border-radius: 8px;
 }
 
@@ -136,8 +151,6 @@ input:focus {
 
 .item-name {
   font-size: 24px;
-  line-break: loose;
-  padding-right: 100px;
   text-align: center;
 }
 
@@ -147,7 +160,6 @@ input:focus {
   font-weight: 700;
   font-size: 28px;
   text-align: center;
-  padding-right: 110px;
 }
 
 .quantity-modifier-decrement,
@@ -180,7 +192,7 @@ input[type="number"].product-quantity {
 .remove-item {
     background: none;
     border: none;
-    color: #333;
+    color: #575757;
     font-size: 24px;
     cursor: pointer;
     margin-left: 20px;
@@ -188,6 +200,8 @@ input[type="number"].product-quantity {
     font-weight: 700;
     margin-left: 20px;
     padding-right: 100px;
+    left: 60px;
+    position: relative;
 }
 
 .increment-buttons {
@@ -217,7 +231,7 @@ input[type="number"].product-quantity {
   padding-right: 100px;
   width: 61px;
   overflow: hidden;
-  margin-left: 10px;
+  margin-left: 50px;
   position: relative;
 }
 
@@ -257,5 +271,3 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-
