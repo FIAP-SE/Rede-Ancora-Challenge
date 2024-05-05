@@ -25,9 +25,13 @@
 }
 
 .customer-details-container {
-  margin-left: 0%;
-  top: 20px;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  left: 35px;
+  top: 100px;
 }
 
 .cart-item {
@@ -52,14 +56,7 @@
 }
 
 .customer-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border-radius: 4px;
-  margin-top: 150px;
-  margin-left: 100px;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .vertical-line {
@@ -78,12 +75,15 @@
 .input-style {
   border-bottom: 3px;
   font-weight: 500;
+  width: 358px;
+  align-items: center;
+  left: 40px;
+  position: relative;
 }
 
 .checkout-button {
   width: 377px;
   height: 77px;
-  margin-top: 10px;
   padding: 10px;
   background-color: #3dae2b;
   color: #ffffff;
@@ -93,6 +93,10 @@
   margin-left: 70px;
   font-size: 36px;
   font-weight: 700;
+  position: relative;
+  text-align: center;
+  right: 35px;
+  top: 20px;
 }
 
 .customer-data {
@@ -103,14 +107,17 @@
 }
 
 input {
-  width: 300px;
-  background: linear-gradient(#575757, #575757) center bottom 5px /
+  background: linear-gradient(#575757, #575757) center bottom 10px /
     calc(100% - 10px) 2px no-repeat;
   background-color: #ffffff;
-  border: 3px solid;
   padding: 30px;
   border: none;
   margin-bottom: 10px;
+}
+
+input[type=text] {
+  font-size: 28px;
+  color: #575757;
 }
 
 ::placeholder {
@@ -144,8 +151,6 @@ input:focus {
 
 .item-name {
   font-size: 24px;
-  line-break: loose;
-  padding-right: 100px;
   text-align: center;
 }
 
@@ -155,7 +160,6 @@ input:focus {
   font-weight: 700;
   font-size: 28px;
   text-align: center;
-  padding-right: 110px;
 }
 
 .quantity-modifier-decrement,
@@ -188,7 +192,7 @@ input[type="number"].product-quantity {
 .remove-item {
     background: none;
     border: none;
-    color: #333;
+    color: #575757;
     font-size: 24px;
     cursor: pointer;
     margin-left: 20px;
@@ -196,6 +200,8 @@ input[type="number"].product-quantity {
     font-weight: 700;
     margin-left: 20px;
     padding-right: 100px;
+    left: 60px;
+    position: relative;
 }
 
 .increment-buttons {
