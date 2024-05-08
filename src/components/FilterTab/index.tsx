@@ -19,7 +19,6 @@ interface FilterTabProps {
 
 const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) => {
     const [codigoPecaFilter, setCodigoPecaFilter] = useState('');
-    const [placaCarroFilter, setPlacaCarroFilter] = useState('');
     const [selectedLinha, setSelectedLinha] = useState('');
     const [selectedMarca, setSelectedMarca] = useState('');
     const [selectedAno, setSelectedAno] = useState('');
@@ -41,37 +40,30 @@ const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) 
     const handleCodigoPecaChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value.toLowerCase();
         setCodigoPecaFilter(value);
-        filterProducts(value, placaCarroFilter, selectedLinha, selectedMarca, selectedAno);
-    };
-
-    const handlePlacaCarroChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const value = event.target.value.toLowerCase();
-        setPlacaCarroFilter(value);
-        filterProducts(codigoPecaFilter, value, selectedLinha, selectedMarca, selectedAno);
+        filterProducts(value, selectedLinha, selectedMarca, selectedAno);
     };
 
     const handleLinhaChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
         setSelectedLinha(value);
-        filterProducts(codigoPecaFilter, placaCarroFilter, value, selectedMarca, selectedAno);
+        filterProducts(codigoPecaFilter, value, selectedMarca, selectedAno);
     };
 
     const handleMarcaChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
         setSelectedMarca(value);
-        filterProducts(codigoPecaFilter, placaCarroFilter, selectedLinha, value, selectedAno);
+        filterProducts(codigoPecaFilter, selectedLinha, value, selectedAno);
     };
 
     const handleAnoChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
         setSelectedAno(value);
-        filterProducts(codigoPecaFilter, placaCarroFilter, selectedLinha, selectedMarca, value);
+        filterProducts(codigoPecaFilter, selectedLinha, selectedMarca, value);
     };
 
-    const filterProducts = (codigoPecaFilter: string, placaCarroFilter: string, linhaFilter: string, marcaFilter: string, anoFilter: string) => {
+    const filterProducts = (codigoPecaFilter: string, linhaFilter: string, marcaFilter: string, anoFilter: string) => {
         const filtered = products.filter(product =>
             (product.codigo_da_peca ?? '').toLowerCase().includes(codigoPecaFilter) &&
-            (product.nome.toLowerCase().includes(placaCarroFilter)) &&
             (linhaFilter === '' || product.linha === linhaFilter) &&
             (marcaFilter === '' || product.marca === marcaFilter) &&
             (anoFilter === '' || product.ano === anoFilter)
@@ -80,19 +72,12 @@ const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) 
     };
 
     return (
-        <div className="filter-tab container">
+        <div className="filter-tab ">
             <input
                 type="text"
-                placeholder="Código da Peça"
+                placeholder="Digite o código da peça aqui"
                 value={codigoPecaFilter}
                 onChange={handleCodigoPecaChange}
-                className="filter-input"
-            />
-            <input
-                type="text"
-                placeholder="Placa do Carro"
-                value={placaCarroFilter}
-                onChange={handlePlacaCarroChange}
                 className="filter-input"
             />
             <select onChange={handleLinhaChange} className="filter-select">
