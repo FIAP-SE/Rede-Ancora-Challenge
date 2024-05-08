@@ -37,7 +37,7 @@
     background: white;
     border: none;
     font-weight: bold;
-    color: rgb(70, 70, 70);
+    color: #575757;
 
 }
 
@@ -49,16 +49,14 @@
     border-left: gray 2px solid;
     border-bottom: gray 2px solid;
     font-weight: bold;
-    color: rgb(70, 70, 70);
+    color: #575757;
 }
 
-h2{
-    font-size: 1.2em;
-    color: rgb(70, 70, 70);
-    font-weight:normal;
+.login-or-register {
+    left: 10px;
 }
 
-.input-box{
+.input-box-login{
     width: 70%;
 	height: 6vh;
 	background: white;
@@ -66,15 +64,14 @@ h2{
 	display: flex;
     margin: 0.3vh auto;
 	padding: 20px;
-    border-color: black;
-    border:2px solid;
+    border: #575757 2px solid;
 	border-radius: 18px;
     font-size:1em;
 }
 
 .input-box::placeholder{
     font-size: 1.5em;
-
+    color: #575757;
 }
 
 .enter-button-login-page{
@@ -82,11 +79,10 @@ h2{
     height: 6vh;
     border-radius: 20px;
     font-size: x-large;
-    background: rgb(0, 255, 98);
+    background: #3DAE2B;
     font-weight: bold;
-    color: rgb(70, 70, 70);
+    color: #FFFFFF;
     border: none;
     margin-bottom: 10%;
     margin-top: 3%;
-
 }

@@ -24,9 +24,14 @@
     margin-left: 32px;
 }
 
+.nav-link:hover {
+    color: #E6E6E6;
+}
+
 
 .nav-link.active {
     text-decoration: underline;
     text-decoration-color: #FFFFFF;
     text-underline-offset: 0.2em;
 }
+

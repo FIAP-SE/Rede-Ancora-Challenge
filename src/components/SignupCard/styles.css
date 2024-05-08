@@ -20,6 +20,23 @@
     gap: 10px;
 }
 
+.input-box-signup {
+    background: linear-gradient(#575757, #575757) center bottom 10px /calc(100% - 10px) 2px no-repeat;
+    background-color: #ffffff;
+    padding: 30px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.input-box-signup[type=text] {
+    font-size: 15px;
+    color: #575757;
+}
+
+.input-box-signup:focus {
+    outline: none;
+}
+
 .login-button-signup-page{
     width: 100%;
     height: 8vh;
@@ -42,13 +59,9 @@
 }
 
 h2{
-    font-size: 1.2em;
-    color: rgb(70, 70, 70);
-    font-weight:normal;
-}
-
-input::placeholder{
-    font-size: 1.5em;
+    font-size: #575757;
+    position: relative;
+    left: 30px;
 }
 
 .addcar-button{
@@ -56,8 +69,7 @@ input::placeholder{
     height: 6vh;
     border-radius: 20px;
     font-size: x-large;
-    background: rgb(70, 70, 70);
-    font-weight: bold;
+    background: #8C8C8C;
     color: rgb(255, 255, 255);
     border: none;
     margin-top: 2%;
@@ -68,9 +80,8 @@ input::placeholder{
     height: 6vh;
     border-radius: 20px;
     font-size: x-large;
-    background: rgb(0, 255, 98);
-    font-weight: bold;
-    color: rgb(70, 70, 70);
+    background: #3DAE2B;
+    color: #fff;
     border: none;
     margin-bottom: 10%;
     margin-top: 3%;

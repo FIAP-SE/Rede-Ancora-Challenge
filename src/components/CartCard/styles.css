@@ -10,7 +10,7 @@
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 1500px;
-  height: auto;
+  min-height: 690px;
 }
 
 .cart-items-container {
@@ -104,9 +104,10 @@
   font-weight: 700;
   text-align: center;
   font-size: 30px;
+  left: -30px;
 }
 
-input {
+.input-style {
   background: linear-gradient(#575757, #575757) center bottom 10px /
     calc(100% - 10px) 2px no-repeat;
   background-color: #ffffff;
@@ -115,16 +116,23 @@ input {
   margin-bottom: 10px;
 }
 
-input[type=text] {
-  font-size: 28px;
+.input-style[type=text] {
+  color: #575757;
+}
+
+.input-style[type=email] {
+  color: #575757;
+}
+
+.input-style[type=tel] {
   color: #575757;
 }
 
 ::placeholder {
-  font-size: 28px;
+  color: #575757;
 }
 
-input:focus {
+.input-style:focus {
   outline: none;
 }
 
