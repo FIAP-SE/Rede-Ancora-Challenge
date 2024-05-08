@@ -44,7 +44,7 @@ input::placeholder{
   color: red;
 }
 
-input{
+input, h3{
   border: none;
   border-bottom: solid black 1px;
   margin: 20px;
