@@ -8,7 +8,7 @@ import Login from "./routes/Home/Login";
 import Registration from "./routes/Home/Registration";
 import SearchCatalog from "./routes/Home/SearchCatalog";
 import ClientPage from "./routes/Home/ClientPage";
-import MyCart from "./routes/cart/MyCart";
+import MyCart from "./routes/Cart/MyCart";
 import OrderConfirmed from "./components/ConfirmationCard";
 import ProductDetails from "./routes/Home/ProductDetails";
 import SearchPiece from "./routes/Home/SearchPiece";
