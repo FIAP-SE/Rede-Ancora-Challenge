@@ -1,16 +1,17 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { animated, useTransition } from 'react-spring';
 import Home from "./routes/Home";
-import SearchByPlate from "./routes/Home/SearchByPlate";
-import SearchByFilter from "./routes/Home/SearchByFilter";
-import SearchByCode from "./routes/Home/SearchByCode"
+// import SearchByPlate from "./routes/Home/SearchByPlate";
+// import SearchByFilter from "./routes/Home/SearchByFilter";
+// import SearchByCode from "./routes/Home/SearchByCode"
 import Login from "./routes/Home/Login";
 import Registration from "./routes/Home/Registration";
 import SearchCatalog from "./routes/Home/SearchCatalog";
 import ClientPage from "./routes/Home/ClientPage";
-import MyCart from "./routes/Cart/MyCart";
+import MyCart from "./routes/cart/MyCart";
 import OrderConfirmed from "./components/ConfirmationCard";
 import ProductDetails from "./routes/Home/ProductDetails";
+import SearchPiece from "./routes/Home/SearchPiece";
 
 export default function App() {
   return (
@@ -34,9 +35,9 @@ function AnimatedRoutes() {
     <animated.div style={{ ...style, position: 'absolute', width: '100%' }}>
       <Routes location={item}>
         <Route path="/" element={<Home />} />
-        <Route path="/searchbyplate" element={<SearchByPlate />} />
-        <Route path="/searchbyfilter" element={<SearchByFilter />} />
-        <Route path="/searchbycode" element={<SearchByCode />} />
+        <Route path="/searchpiece" element={<SearchPiece />} />
+        {/* <Route path="/searchbyfilter" element={<SearchByFilter />} /> */}
+        {/* <Route path="/searchbycode" element={<SearchByCode />} /> */}
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/orderconfirmed" element={<OrderConfirmed />} />
         <Route path="/login" element={<Login />} />
