@@ -10,6 +10,7 @@ import SearchCatalog from "./routes/Home/SearchCatalog";
 import ClientPage from "./routes/Home/ClientPage";
 import MyCart from "./routes/cart/MyCart";
 import OrderConfirmed from "./components/ConfirmationCard";
+import ProductDetails from "./routes/Home/ProductDetails";
 
 export default function App() {
   return (
@@ -41,8 +42,10 @@ function AnimatedRoutes() {
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/searchcatalog" element={<SearchCatalog />} />
+        <Route path="/productdetail/:id" element={<ProductDetails />} />
         <Route path="/clientpage" element={<ClientPage />} />
       </Routes>
     </animated.div>
   ));
 }
+

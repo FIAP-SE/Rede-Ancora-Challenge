@@ -4,6 +4,8 @@ import ProductCard from "../../../components/ProductCard";
 import FilterTab from "../../../components/FilterTab";
 import data from "../../../../public/data.json";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 interface Product {
     id: number;
@@ -31,12 +33,15 @@ export default function SearchCatalog() {
                 </div>
                 <div className="product-grid">
                     {filteredProducts.map(product => (
-                        <ProductCard
-                            key={product.id}
-                            name={product.nome}
-                            price={product.preco.toString()}
-                            imagePath={product.imagem}
-                        />
+                        <div key={product.id}>
+                            <Link to={`/productdetail/${product.id}`}>
+                                <ProductCard
+                                    name={product.nome}
+                                    price={product.preco.toFixed(2)}
+                                    imagePath={product.imagem}
+                                />
+                            </Link>
+                        </div>
                     ))}
                 </div>
             </section>

@@ -1,0 +1,13 @@
+.rda-button-buy {
+    background-color: #3DAE2B;
+    color: white;
+    width: 233px;
+    height: 77px;
+    border-radius: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}

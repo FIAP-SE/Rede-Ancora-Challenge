@@ -3,7 +3,7 @@
     {
       "id": 9,
       "imagem": "/assets/freio_fiat.jpg",
-      "categoria": "Freio",
+      "linha": "Freio",
       "nome": "Freio para carro",
       "preco": 58.0,
       "descricao": "Freio para veículos",
@@ -16,7 +16,7 @@
     {
       "id": 10,
       "imagem": "/assets/freio_mitsubishi.jpg",
-      "categoria": "Freio",
+      "linha": "Freio",
       "nome": "Freio para carro",
       "preco": 70.0,
       "descricao": "Freio para veículos",
@@ -29,7 +29,7 @@
     {
       "id": 11,
       "imagem": "/assets/freio_ford.jpg",
-      "categoria": "Freio",
+      "linha": "Freio",
       "nome": "Freio para carro",
       "preco": 80.0,
       "descricao": "Freio para veículos",
@@ -43,7 +43,7 @@
     {
       "id": 12,
       "imagem": "/assets/freio_chevrolet.jpg",
-      "categoria": "Freio",
+      "linha": "Freio",
       "nome": "Freio para carro",
       "preco": 62.0,
       "descricao": "Freio para veículos",
@@ -56,7 +56,7 @@
     {
       "id": 13,
       "imagem": "/assets/motor_fiat.jpg",
-      "categoria": "Motor",
+      "linha": "Motor",
       "nome": "Motor para carro",
       "preco": 9500.0,
       "descricao": "Motor para veículos",
@@ -69,7 +69,7 @@
     {
       "id": 14,
       "imagem": "/assets/motor_mitsubishi.jpg",
-      "categoria": "Motor",
+      "linha": "Motor",
       "nome": "Motor para carro",
       "preco": 25000.0,
       "descricao": "Motor para veículos",
@@ -82,7 +82,7 @@
     {
       "id": 15,
       "imagem": "/assets/motor_ford.jpg",
-      "categoria": "Motor",
+      "linha": "Motor",
       "nome": "Motor para carro",
       "preco": 3000.0,
       "descricao": "Motor para veículos",
@@ -96,7 +96,7 @@
     {
       "id": 16,
       "imagem": "/assets/motor_chevrolet.jpg",
-      "categoria": "Motor",
+      "linha": "Motor",
       "nome": "Motor para carro",
       "preco": 20000.0,
       "descricao": "Motor para veículos",
@@ -107,12 +107,12 @@
       "codigo da peça": "BE4CASU5M"
     },
     {
-      "id": 10,
+      "id": 17,
       "imagem": "/assets/pneuCarro.jpg",
-      "categoria": "Pneu",
+      "linha": "Pneu",
       "nome": "Pneu de Carro",
       "preco": 80.00,
-      "descricao": "Pneu para veículos",
+      "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "marca": "Fiat",
       "ano": "2018",
       "outras_informacoes": "Outras informações sobre o Pneu de Carro 10",

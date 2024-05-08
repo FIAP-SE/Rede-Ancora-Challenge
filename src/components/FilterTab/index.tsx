@@ -1,4 +1,4 @@
-import{ useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './styles.css';
 
 interface Product {
@@ -7,7 +7,7 @@ interface Product {
     preco: number;
     marca: string;
     imagem: string;
-    categoria?: string;
+    linha?: string;
     ano?: string;
     codigo_da_peca?: string;
 }
@@ -18,17 +18,18 @@ interface FilterTabProps {
 }
 
 const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) => {
-    const [filter, setFilter] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('');
+    const [codigoPecaFilter, setCodigoPecaFilter] = useState('');
+    const [placaCarroFilter, setPlacaCarroFilter] = useState('');
+    const [selectedLinha, setSelectedLinha] = useState('');
     const [selectedMarca, setSelectedMarca] = useState('');
     const [selectedAno, setSelectedAno] = useState('');
-    const [categories, setCategories] = useState<string[]>([]);
+    const [linhas, setLinhas] = useState<string[]>([]);
     const [marcas, setMarcas] = useState<string[]>([]);
     const [anos, setAnos] = useState<string[]>([]);
 
     useEffect(() => {
-        const uniqueCategories = Array.from(new Set(products.map(product => product.categoria || ''))).filter(Boolean);
-        setCategories(uniqueCategories);
+        const uniqueLinhas = Array.from(new Set(products.map(product => product.linha || ''))).filter(Boolean);
+        setLinhas(uniqueLinhas);
 
         const uniqueMarcas = Array.from(new Set(products.map(product => product.marca))).filter(Boolean);
         setMarcas(uniqueMarcas);
@@ -37,34 +38,41 @@ const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) 
         setAnos(uniqueAnos);
     }, [products]);
 
-    const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleCodigoPecaChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value.toLowerCase();
-        setFilter(value);
-        filterProducts(value, selectedCategory, selectedMarca, selectedAno);
+        setCodigoPecaFilter(value);
+        filterProducts(value, placaCarroFilter, selectedLinha, selectedMarca, selectedAno);
     };
 
-    const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const handlePlacaCarroChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const value = event.target.value.toLowerCase();
+        setPlacaCarroFilter(value);
+        filterProducts(codigoPecaFilter, value, selectedLinha, selectedMarca, selectedAno);
+    };
+
+    const handleLinhaChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
-        setSelectedCategory(value);
-        filterProducts(filter, value, selectedMarca, selectedAno);
+        setSelectedLinha(value);
+        filterProducts(codigoPecaFilter, placaCarroFilter, value, selectedMarca, selectedAno);
     };
 
     const handleMarcaChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
         setSelectedMarca(value);
-        filterProducts(filter, selectedCategory, value, selectedAno);
+        filterProducts(codigoPecaFilter, placaCarroFilter, selectedLinha, value, selectedAno);
     };
 
     const handleAnoChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
         setSelectedAno(value);
-        filterProducts(filter, selectedCategory, selectedMarca, value);
+        filterProducts(codigoPecaFilter, placaCarroFilter, selectedLinha, selectedMarca, value);
     };
 
-    const filterProducts = (nameFilter: string, categoryFilter: string, marcaFilter: string, anoFilter: string) => {
+    const filterProducts = (codigoPecaFilter: string, placaCarroFilter: string, linhaFilter: string, marcaFilter: string, anoFilter: string) => {
         const filtered = products.filter(product =>
-            (product.nome.toLowerCase().includes(nameFilter) || (product.codigo_da_peca ?? '').toLowerCase().includes(nameFilter)) &&
-            (categoryFilter === '' || product.categoria === categoryFilter) &&
+            (product.codigo_da_peca ?? '').toLowerCase().includes(codigoPecaFilter) &&
+            (product.nome.toLowerCase().includes(placaCarroFilter)) &&
+            (linhaFilter === '' || product.linha === linhaFilter) &&
             (marcaFilter === '' || product.marca === marcaFilter) &&
             (anoFilter === '' || product.ano === anoFilter)
         );
@@ -72,18 +80,25 @@ const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) 
     };
 
     return (
-        <div className="filter-tab">
+        <div className="filter-tab container">
             <input
                 type="text"
-                placeholder="Nome, Código da Peça"
-                value={filter}
-                onChange={handleFilterChange}
+                placeholder="Código da Peça"
+                value={codigoPecaFilter}
+                onChange={handleCodigoPecaChange}
                 className="filter-input"
             />
-            <select onChange={handleCategoryChange} className="filter-select">
-                <option value="">Categoria</option>
-                {categories.map(category => (
-                    <option key={category} value={category}>{category}</option>
+            <input
+                type="text"
+                placeholder="Placa do Carro"
+                value={placaCarroFilter}
+                onChange={handlePlacaCarroChange}
+                className="filter-input"
+            />
+            <select onChange={handleLinhaChange} className="filter-select">
+                <option value="">Linha do Carro</option>
+                {linhas.map(linha => (
+                    <option key={linha} value={linha}>{linha}</option>
                 ))}
             </select>
             <select onChange={handleMarcaChange} className="filter-select">
@@ -101,6 +116,5 @@ const FilterTab: React.FC<FilterTabProps> = ({ products, setFilteredProducts }) 
         </div>
     );
 }
-
 
 export default FilterTab;
