@@ -4,14 +4,9 @@ import './styles.css';
 
 export default function ShoppingCart() {
 
-    /*SIMULAÇÃO DE PRODUTOS*/
     const [products, setProducts] = useState([
         { id: 1, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
         { id: 2, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 3, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 5, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 6, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 7, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
     ]);
     const navigate = useNavigate();
 

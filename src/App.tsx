@@ -1,14 +1,11 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { animated, useTransition } from 'react-spring';
 import Home from "./routes/Home";
-// import SearchByPlate from "./routes/Home/SearchByPlate";
-// import SearchByFilter from "./routes/Home/SearchByFilter";
-// import SearchByCode from "./routes/Home/SearchByCode"
 import Login from "./routes/Home/Login";
 import Registration from "./routes/Home/Registration";
 import SearchCatalog from "./routes/Home/SearchCatalog";
 import ClientPage from "./routes/Home/ClientPage";
-import MyCart from "./routes/Cart/MyCart";
+import MyCart from "./routes/cart/MyCart";
 import OrderConfirmed from "./components/ConfirmationCard";
 import ProductDetails from "./routes/Home/ProductDetails";
 import SearchPiece from "./routes/Home/SearchPiece";
@@ -38,8 +35,6 @@ function AnimatedRoutes() {
       <Routes location={item}>
         <Route path="/" element={<Home />} />
         <Route path="/searchpiece" element={<SearchPiece />} />
-        {/* <Route path="/searchbyfilter" element={<SearchByFilter />} /> */}
-        {/* <Route path="/searchbycode" element={<SearchByCode />} /> */}
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/orderconfirmed" element={<OrderConfirmed />} />
         <Route path="/login" element={<Login />} />
@@ -49,7 +44,6 @@ function AnimatedRoutes() {
         <Route path="/clientpage" element={<ClientPage />} />
         <Route path="/aboutproject" element={<Project/>} />
         <Route path="/pitch" element={<Pitch/>} />
-        
       </Routes>
     </animated.div>
   ));
