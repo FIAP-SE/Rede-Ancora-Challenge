@@ -119,19 +119,5 @@
       "quantidade": 30,
       "codigo_da_peca": "584A56IU9"
     }
-  ],
-  "usuarios": [
-    {
-      "id": 1,
-      "nome": "João Silva",
-      "email": "joao@example.com",
-      "telefone": "129967-4095"
-    },
-    {
-      "id": 2,
-      "nome": "Maria Oliveira",
-      "email": "maria@example.com",
-      "telefone": "159987-5432"
-    }
   ]
 }
