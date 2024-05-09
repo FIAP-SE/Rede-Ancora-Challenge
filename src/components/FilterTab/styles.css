@@ -1,35 +1,38 @@
-.container {
-    max-width: 900px;
-    margin: 0 auto; /* Centralizando o container */
-}
-
 .filter-tab {
     display: flex;
-    justify-content: space-between; /* Espaçamento entre os elementos */
     align-items: center;
-    width: 100%; /* Garantindo que a largura da .filter-tab seja 100% */
+    justify-content: center; 
+    max-width: 1100px;
+    margin: 0 auto; 
 }
+
 
 .filter-input,
 .filter-select {
     padding: 8px;
-    border: 1px solid #ccc; /* Adicionando uma borda */
-    border-radius: 10px; /* Ajustando o arredondamento */
-    width: 150px; /* Definindo uma largura fixa */
-    display: flex; /* Usando flexbox */
-    align-items: center; /* Centralizando verticalmente */
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center;
+    margin-right: 20px;
+    font-size: 15px !important;
+    font-weight: 500;
 }
 .filter-input input {
-    flex: 1; /* Permitindo que o input ocupe todo o espaço disponível */
+    flex: 1;
 }
 
 
 .filter-input {
     height: 35px;
-    margin: 0 !important;
+    margin: 0 30px 0 0 !important;
+    width: 400px;
+    height: 45px;
 }
 
 .filter-select {
-    margin-left: 10px; /* Movendo o select para a direita */
+    margin-left: 15px; 
+    width: 150px;
+    height: 45px;
 }
 

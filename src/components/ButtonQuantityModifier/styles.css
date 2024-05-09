@@ -1,11 +1,14 @@
 .display-buttons {
     display: flex;
     align-items: center;
-    border: 5px solid #575757;
+    border: 2px solid #575757;
     border-radius: 21px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
     overflow: hidden;
+    width: 200px;
+    background-color: #ffffff; 
+    height: 80px;
 }
 
 .item-quantity {
@@ -14,18 +17,23 @@
     align-items: center;
 }
 
-.input-box, .product-quantity {
+.input-box,
+.product-quantity {
     font-size: 16px;
     color: #333;
-    width: 70px;
-    border: 1px solid #ddd;
+    width: 60px; 
     line-height: 1;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     margin: 0 10px;
     border-radius: 4px;
     background-color: #ffffff;
 }
+
+.product-quantity {
+    border: 2px solid #575757 !important; 
+}
+
 
 .quantity-modifier-increment,
 .quantity-modifier-decrement {
@@ -38,9 +46,10 @@
     width: 30px;
     height: 30px;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    margin: 2px;
 }
 
 .quantity-modifier-increment:hover,
