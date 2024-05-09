@@ -34,7 +34,7 @@ export default function SignupCard() {
                 <input className="input-box-signup" type="text" placeholder="Ano" />
                 <input className="input-box-signup" type="text" placeholder="Kilometragem" />
                 <button className="addcar-button">Adicionar mais um carro</button>
-                <button className="enter-button-signup-page">CADASTRAR</button>
+                <button className="enter-button-signup-page" onClick={() => handleNavigate('/clientpage')}>CADASTRAR</button>
             </div>
         </div>
     );

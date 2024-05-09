@@ -38,7 +38,15 @@ export default function Home() {
               />
               <ButtonCard
                 content="MEU CADASTRO"
-                onClick={() => handleNavigate("login")}
+                onClick={() => handleNavigate("/login")}
+              />
+              <ButtonCard
+                content="VIDEO PITCH"
+                onClick={() => handleNavigate("/pitch")}
+              />
+              <ButtonCard
+                content="SOBRE O PROJETO"
+                onClick={() => handleNavigate("/aboutproject")}
               />
             </div>
           </section>

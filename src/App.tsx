@@ -12,6 +12,8 @@ import MyCart from "./routes/cart/MyCart";
 import OrderConfirmed from "./components/ConfirmationCard";
 import ProductDetails from "./routes/Home/ProductDetails";
 import SearchPiece from "./routes/Home/SearchPiece";
+import Project from "./routes/Home/AboutProject";
+import Pitch from './routes/Home/Pitch/index';
 
 export default function App() {
   return (
@@ -45,6 +47,9 @@ function AnimatedRoutes() {
         <Route path="/searchcatalog" element={<SearchCatalog />} />
         <Route path="/productdetail/:id" element={<ProductDetails />} />
         <Route path="/clientpage" element={<ClientPage />} />
+        <Route path="/aboutproject" element={<Project/>} />
+        <Route path="/pitch" element={<Pitch/>} />
+        
       </Routes>
     </animated.div>
   ));

@@ -18,10 +18,7 @@ export default function LoginCard() {
                 <h2 className='login-or-register'>Faça seu login ou cadastre-se:</h2>
                 <input className='input-box-login' type="email" placeholder="Email" />
                 <input className='input-box-login' type="password" placeholder="Senha" />
-                <a href='/reset-password' className='forgot-pass'>
-                    <h3>Esqueci minha senha</h3>
-                </a>
-                <button className='enter-button-login-page'>ENTRAR</button>
+                <button className='enter-button-login-page' onClick={() => handleNavigate('/clientpage')}>ENTRAR</button>
             </div>
         </div>
     );
