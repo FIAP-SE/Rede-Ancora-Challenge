@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './styles.css';
+import RedirectAfterTimeout from '../RedirectAfterTimeout';
 
 export default function OrderConfirmed() {
     const [orderNumber, setOrderNumber] = useState('');
@@ -18,9 +19,10 @@ export default function OrderConfirmed() {
             <div className="confirmation-content">
                 <h1 className="confirmation-title">PEDIDO CONFIRMADO!</h1>
                 <span className="order-number">{orderNumber}</span>
-                    <div className="instructions">Vá até o caixa para finalizar</div>
-                    <div className="instructions">seu pagamento e retirar</div>
-                    <div className="instructions">sua compra.</div>
+                <div className="instructions">Vá até o caixa para finalizar</div>
+                <div className="instructions">seu pagamento e retirar</div>
+                <div className="instructions">sua compra.</div>
+                <RedirectAfterTimeout timeout={25000} />
             </div>
         </div>
     );

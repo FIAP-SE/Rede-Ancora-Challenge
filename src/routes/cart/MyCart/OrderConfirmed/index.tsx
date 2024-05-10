@@ -3,17 +3,14 @@ import Header from '../../../../components/Header';
 import ConfirmationCard from '../../../../components/ConfirmationCard';
 
 export default function OrderConfirmed() {
-
     return (
         <>
-            <header>
-                <Header/>
-                <main className="center">
+            <Header />
+            <main className="center">
                 <section>
-                    <ConfirmationCard/>
+                    <ConfirmationCard />
                 </section>
             </main>
-            </header>
         </>
-    )
+    );
 }
