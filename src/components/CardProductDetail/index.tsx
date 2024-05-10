@@ -6,7 +6,7 @@ import './styles.css';
 type Props = {
     imagePath: string;
     name: string;
-    price: string; 
+    price: string;
     descricao: string;
     marca: string;
     outrasInfos: string;
