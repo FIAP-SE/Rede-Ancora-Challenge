@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ButtonBuy from '../ButtonBuy';
 import QuantityModifier from '../ButtonQuantityModifier';
 import './styles.css';
