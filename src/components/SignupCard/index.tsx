@@ -19,7 +19,7 @@ export default function SignupCard() {
                 </button>
                 <button className="signup-button-signup-page">CADASTRO</button>
             </div>
-            <h2>DADOS PESSOAIS</h2>
+            <h2 className="personal-data">DADOS PESSOAIS</h2>
             <div className="rda-SignupCard-content">
                 <input className="input-box-signup" type="text" placeholder="Nome" />
                 <input className="input-box-signup" type="email" placeholder="Email" />
@@ -27,7 +27,7 @@ export default function SignupCard() {
                 <input className="input-box-signup" type="text" placeholder="Cidade" />
             </div>
 
-            <h2>MEU CARRO</h2>
+            <h2 className="my-car">MEU CARRO</h2>
             <div className="rda-SignupCard-content">
                 <input className="input-box-signup" type="text" placeholder="Marca" />
                 <input className="input-box-signup" type="text" placeholder="Modelo" />

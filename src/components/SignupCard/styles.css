@@ -58,7 +58,13 @@
     color: rgb(70, 70, 70);
 }
 
-h2{
+.personal-data{
+    font-size: #575757;
+    position: relative;
+    left: 30px;
+}
+
+.my-car{
     font-size: #575757;
     position: relative;
     left: 30px;
