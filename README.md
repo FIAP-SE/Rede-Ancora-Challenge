@@ -10,6 +10,7 @@
 ## Como rodar o projeto
 
 ### Pré-requisitos:
+
 - Node.js
 - npm ou Yarn
 
@@ -23,7 +24,7 @@ git clone https://github.com/FIAP-SE/Rede-Ancora-Challenge.git
 
 ### Instalando as dependências
 
-Abaixo temos os comandos para os gerenciadore npm e Yarn, use <b>apenas um</b> dos seguintes comandos do gerenciador de sua escolha no diretório raiz do projeto para instalar as dependências:
+Abaixo temos os comandos para os gerenciadore npm e Yarn, use `<b>`apenas um`</b>` dos seguintes comandos do gerenciador de sua escolha no diretório raiz do projeto para instalar as dependências:
 
 #### Usando npm
 
@@ -53,18 +54,20 @@ npm run dev
 yarn run dev
 ```
 
-Após a execução do projeto, ele será disponibilizado localmente em sua máquina através do link ```http://localhost:xxxx```.
+Após a execução do projeto, ele será disponibilizado localmente em sua máquina através do link ``http://localhost:xxxx``.
 
-<b> ⚠️ Lembre-se de usar o mesmo gerenciador de pacotes no processo! </b>
+`<b>` ⚠️ Lembre-se de usar o mesmo gerenciador de pacotes no processo! `</b>`
+
+Caso queira acessar o site do projeto, ele está disponível [aqui](https://redeancora-challenge.netlify.app) no Netlify.
+
+Para uma experiência mais completa do projeto proposto, recomendo navegar pelo projeto em tela cheia (F11).
 
 ## Integrantes do Grupo
-| RM   | Nome  |
-|------------|------------|
-| RM553702      | André Luiz Viana Ribeiro  |
-| RM554124     | Bárbara Blauth Schmidt  |
-| RM553554     | Gustavo Henrique de Jesus  |
-| RM552727     | Sivaldo Stolarz de Lima  |
-| RM553012    | Paulo Sergio Morais Gonçalves  |
 
-
-
+| RM       | Nome                           |
+| -------- | ------------------------------ |
+| RM553702 | André Luiz Viana Ribeiro      |
+| RM554124 | Bárbara Blauth Schmidt        |
+| RM553554 | Gustavo Henrique de Jesus      |
+| RM552727 | Sivaldo Stolarz de Lima        |
+| RM553012 | Paulo Sergio Morais Gonçalves |
