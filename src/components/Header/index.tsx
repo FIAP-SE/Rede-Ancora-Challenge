@@ -6,8 +6,8 @@ export default function Header() {
 
   const location = useLocation();
 
-  const isActive = (path:string) => {
-    return location.pathname === path;
+  const isActive = (paths: string[], exact: boolean = false): boolean => {
+    return paths.some(path => exact ? location.pathname === path : location.pathname.startsWith(path));
   };
 
   return (
@@ -19,18 +19,18 @@ export default function Header() {
           </Link>
         </div>
         <nav className="navigation">
-          <Link to="/" className={`nav-link ${isActive("/") ? "active" : ""}`}>
+          <Link to="/" className={`nav-link ${isActive(["/"], true) ? "active" : ""}`}>
             VOLTAR A HOME
           </Link>
           <Link
             to="/registration"
-            className={`nav-link ${isActive("/registration") ? "active" : ""}`}
+            className={`nav-link ${isActive(["/registration", "/login"]) ? "active" : ""}`}
           >
             MEU CADASTRO
           </Link>
           <Link
             to="/mycart"
-            className={`nav-link ${isActive("/mycart") ? "active" : ""}`}
+            className={`nav-link ${isActive(["/mycart"]) ? "active" : ""}`}
           >
             MEU CARRINHO
           </Link>
