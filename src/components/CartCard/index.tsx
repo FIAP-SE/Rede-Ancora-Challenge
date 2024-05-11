@@ -5,8 +5,8 @@ import './styles.css';
 export default function ShoppingCart() {
 
     const [products, setProducts] = useState([
-        { id: 1, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
-        { id: 2, name: "Nome do Produto em duas linhas", price: "R$ 109,90", quantity: 1 },
+        { id: 1, name: "Freio chevrolet", price: "R$ 120,90", quantity: 1, image: "../../../public/assets/freio_chevrolet.jpg" },
+        { id: 2, name: "Freio Ford", price: "R$ 130,90", quantity: 1, image: "../../../public/assets/freio_chevrolet.jpg" },
     ]);
     const navigate = useNavigate();
 
@@ -77,7 +77,9 @@ export default function ShoppingCart() {
                 <div className="products-container">
                     {products.map((product) => (
                         <div key={product.id} className="cart-item">
-                            <div className="item-image"></div>
+                            <div className="item-image">
+                                <img src={product.image} alt="Imagem do Produto" />
+                            </div>
                             <div className="item-info">
                                 <p className="item-name">{product.name}</p>
                                 <p className="item-price">{product.price}</p>
@@ -86,7 +88,7 @@ export default function ShoppingCart() {
                                 <input className="product-quantity" type="number" value={product.quantity} readOnly />
                                 <div className="item-quantity">
                                     <ul className="increment-buttons">
-                                    <li className="increment-element">
+                                        <li className="increment-element">
                                             <button className="quantity-modifier-increment" onClick={() => increment(product.id)}>+</button>
                                         </li>
                                         <li className="decrement-element">
