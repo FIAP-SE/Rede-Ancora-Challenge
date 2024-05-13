@@ -56,7 +56,7 @@ yarn run dev
 
 Após a execução do projeto, ele será disponibilizado localmente em sua máquina através do link ``http://localhost:xxxx``.
 
-`<b>` ⚠️ Lembre-se de usar o mesmo gerenciador de pacotes no processo! `</b>`
+⚠️ Lembre-se de usar o mesmo gerenciador de pacotes no processo!
 
 Caso queira acessar o site do projeto, ele está disponível [aqui](https://redeancora-challenge.netlify.app) no Netlify.
 
