@@ -1,4 +1,4 @@
-.box0{
+.client-page-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,54 +8,71 @@
   border-radius: 20px;
 }
 
-.line1{
+.line1 {
   height: 620px;
   border-left: 3px solid grey;
 }
 
 
-.box1, .box2{
+.client-info,
+.car-info {
   width: 50%;
   height: 600px;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding: 80px;
+  color: #575757;
+  position: relative;
 }
 
-h2{
+.car-info {
+  bottom: 10px;
+}
+
+.welcome-title, .registered-car {
   font-size: 24px;
   color: #575757;
-  font-weight: 600;
-  
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
-h1{
-  color: #fff;
-  margin-bottom: 5px;
+.client-name {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-input::placeholder{
+input::placeholder {
   font-weight: 600;
   font-size: 20px;
 }
 
-.red{
+.red {
   color: red;
+  margin: 0;
 }
 
-input{
+.add-car {
+  color: red;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-weight: 500;
+
+}
+
+input {
   border: none;
-  border-bottom: solid black 1px;
+  border-bottom: solid #575757 1px;
   margin: 20px;
   padding: 10px;
   width: 450px;
   font-size: 20px;
 }
 
-.info{
+.info-client {
   border: none;
-  border-bottom: solid black 1px;
+  border-bottom: solid #575757 1px;
   margin: 20px;
   padding: 10px;
   width: 450px;
